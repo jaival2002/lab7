@@ -1,47 +1,32 @@
-html{
-    scroll-behavior: smooth;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
-    margin-top: 0;
-    position: relative;
-    margin-bottom: 150;
-}
-body{
+
+
+body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
 }
-h1{
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: 90px;
-    line-height: 130%;
-}
+
 
 ul, li {
     list-style: none;
     margin: 10px 0;
 }
-nav{
-    font-size: larger;
+
+
+nav {
     background-color: rgb(192, 255, 225);
-    
-    z-index: 1;
-    width: 100%;
+    font-size: larger;
     font-weight: 200;
 }
-.hi{
-    color: rgb(0, 191, 255);
-}
-img{
-    
-}
 
-
-.lissst{
-    font-size: 20px;
-}
-
-.contacttext{
-    text-decoration: underline;
+nav ul {
+    text-align: center;
+    padding: 30px 0;
 }
 
 nav ul li {
@@ -52,69 +37,105 @@ nav ul li {
     font-size: 20px;
     background-color: aquamarine;
 }
-nav ul {
-    padding: 0 auto;
+
+
+header {
     text-align: center;
-    padding: 30px;
 }
 
-body,ul{
-    margin: 0;
-    padding: 0;
+header h1 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 90px;
+    line-height: 130%;
+    color: rgb(0, 191, 255);
 }
+
+
 .mee {
-    max-height: 50%;
-    max-width: 50%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10%;
-    box-shadow: 1 2 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
     margin-top: 30px;
-    margin-left: 300px;
 }
-.stuffido{
-    margin-left: 24%;
-    text-align: left;
+
+
+section {
+    text-align: center;
+}
+
+.stuffido {
     font-size: 20px;
     line-height: 150%;
 }
 
 
-
-.stuff{
-    max-height: 500px;
-    max-height: 500px;
-}
-
-.sectionresume{
-    margin: 30px;
-}
-
-.contactme {
-    padding-top: 20px;
-    margin-top: 10px;
-}
-
-.pics{
-    position: absolute;
-    justify-content: center;
+.row {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,300px));
-    column-gap: 10px;
-    row-gap: 30px;
 }
 
-img{
-
-    size: 70%;
-
+.row > div {
+    flex: 1;
 }
 
-.gpics{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
+
+.sectionresume {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
+
+.stuff {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    text-align: center;
+}
+
+
+form {
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+
+form label {
+    display: block; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}
+
+
+form input[type="email"],
+form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+
+form input[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; 
+}
