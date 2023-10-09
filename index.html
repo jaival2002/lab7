@@ -1,76 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Meta and Charset definitions -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Title of the webpage -->
-        <title>Jaival Vikal</title>
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Linking to external CSS stylesheet and fonts -->
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    </head>
+   
+    <title>Jaival Vikal</title>
+
+  
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
     
-    <body>
-        <!-- Navigation bar with links to different pages -->
-        <nav>
-            <ul>
-                <li>
-                    <a style="text-decoration: none;" href="index.html">About</a>
-                </li>
-                <li>
-                    <a style="text-decoration: none;" href="resume.html">Experience</a>
-                </li>
-                <li>
-                    <a style="text-decoration: none;" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        
-        <!-- Header section with a greeting and list of roles/positions -->
-        <header>
-            <div>
-                <div class="row">
-                    <div>
-                        <h1 class="hi">
-                            Hey, <br/> I'm Jaival Vikal.
-                        </h1>
-                        <ul class="lissst">
-                            <li> - Founder / CEO @Futboltastic Store</li>
-                            <li> - Senior @UAB | Computer Science | Entrepreneurship</li>
-                            <li> - Founder @Yash Productions</li>
-                            <li> - Product Management Intern @Sportsy </li>
-                            <li> - Photographer @UAB</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <!-- Profile image (ensure the path to the image is correct) -->
-                        <img class="mee" src="-DSC4304.JPG" alt="">
-                    </div>
-                </div>
-            </div>
-        </header>
+    <nav>
+    <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul id="menu">
+        <li><a href="index.html">About</a></li>
+        <li><a href="resume.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Section detailing different roles and a link to experiences -->
-        <section>
-            <ul class="stuffido">
-                <li> Entrepreneur</li>
-                <li> Soccer Athlete </li>
-                <li> Inno Top Under 25 Entrepreneurs Alabama 2022</li>
-                <li> Media Producer </li>
-                <li> Consultant </li>
-            </ul> 
-            <a href="resume.html">My experiences</a>
-        </section>
-    </body>
+   
+    <header>
+        <div>
+        <div class="row">
+        <div>
+            <h1 class="hi">
+                Hey, <br /> I'm Jaival Vikal.
+                </h1>
+                <ul class="lissst">
+                    <li> - Founder / CEO @Futboltastic Store</li>
+                    <li> - Senior @UAB | Computer Science | Entrepreneurship</li>
+                    <li> - Founder @Yash Productions</li>
+                    <li> - Product Management Intern @Sportsy </li>
+                    <li> - Photographer @UAB</li>
+        </ul>
+        </div>
+        <div>
+                   
+            <img class="mee" src="-DSC4304.JPG" alt="Profile Image of Jaival Vikal">
+        </div>
+        </div>
+        </div>
+    </header>
+
     
-    <!-- Footer with name -->
+    <section>
+        <ul class="stuffido">
+            <li> Entrepreneur</li>
+            <li> Soccer Athlete </li>
+            <li> Inno Top Under 25 Entrepreneurs Alabama 2022</li>
+            <li> Media Producer </li>
+            <li> Consultant </li>
+        </ul>
+        <a href="resume.html">My experiences</a>
+    </section>
     <footer>
         <p>Jaival Vikal</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
 </html>

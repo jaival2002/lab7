@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <!-- Character encoding and viewport settings -->
+   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Linking to external stylesheets (Note: Ensure only necessary stylesheets are linked) -->
+    
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
+<!-- Added JAVA Script function that changes the NAV bar on click to a hamburger menu -->
+    <script>    
+        function toggleMenu() {     //Added functionality for the on click function in JAVA Script 
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
 </head>
 
-<!-- Navigation bar with links to different pages -->
+
 <nav>
     <ul>
         <li>
@@ -26,9 +38,7 @@
 </nav>
 
 <body>
-    <!-- Main header for the contact section -->
-
-    <!-- Contact section with form to collect email and message -->
+  
     <section>
         <h2 class="h2contact">Contact Me</h2>
         <form action="process_form.php" method="post">

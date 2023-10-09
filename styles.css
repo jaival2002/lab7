@@ -1,16 +1,13 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 15px;
 }
-
 
 ul, li {
     list-style: none;
@@ -24,8 +21,15 @@ nav {
     font-weight: 200;
 }
 
+#menu-icon {
+    display: none;  
+    font-size: 30px;
+    cursor: pointer;
+}
+
 nav ul {
-    text-align: center;
+    display: flex; /* Hambuger menu is initially hidden */
+    justify-content: center;
     padding: 30px 0;
 }
 
@@ -38,7 +42,6 @@ nav ul li {
     background-color: aquamarine;
 }
 
-
 header {
     text-align: center;
 }
@@ -50,15 +53,14 @@ header h1 {
     color: rgb(0, 191, 255);
 }
 
-
-.mee {
+.mee {      /* Optimzed for smaller windows */
+    width: 100%;
     max-width: 100%;
     height: auto;
     border-radius: 10%;
     box-shadow: 1px 2px 30px rgba(0, 0, 0, 0.5);
     margin-top: 30px;
 }
-
 
 section {
     text-align: center;
@@ -68,7 +70,6 @@ section {
     font-size: 20px;
     line-height: 150%;
 }
-
 
 .row {
     display: flex;
@@ -80,7 +81,6 @@ section {
     flex: 1;
 }
 
-
 .sectionresume {
     margin: 30px;
     display: flex;
@@ -89,30 +89,25 @@ section {
     text-align: center;
 }
 
-
 .stuff {
     max-width: 100%;
     height: auto;
 }
 
-
 footer {
     text-align: center;
 }
-
 
 form {
     max-width: 400px; 
     margin: 0 auto; 
 }
 
-
 form label {
     display: block; 
     margin-bottom: 10px; 
     font-weight: bold; 
 }
-
 
 form input[type="email"],
 form textarea {
@@ -124,7 +119,6 @@ form textarea {
     font-size: 16px; 
 }
 
-
 form input[type="submit"] {
     background-color: #007bff; 
     color: #fff; 
@@ -135,7 +129,25 @@ form input[type="submit"] {
     font-size: 18px; 
 }
 
-
 form input[type="submit"]:hover {
     background-color: #0056b3; 
+}
+
+/* This funtion creates a Media Query for Mobile Devices optimization */
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block;  /* This function displays the hamburger icon */
+    }
+
+    #menu {
+        display: none;  /* The main menu is initially hidden */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu li {
+        display: block;  /* This function helps stack the items vertically in the menu when the dimensions change */
+        margin-bottom: 0.5rem;
+    }
 }
