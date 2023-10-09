@@ -9,7 +9,7 @@
    
     <title>Jaival Vikal</title>
 
-  
+    <!-- The header links all the files together -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
 
 <body>
     
-    <nav>
+    <nav>  <!-- Added JAVA Script function that changes the NAV bar on click to a hamburger menu -->
     <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
     <ul id="menu">
         <li><a href="index.html">About</a></li>
@@ -29,7 +29,7 @@
     </nav>
 
    
-    <header>
+    <header> <!-- This function signifies the experiences in a list form -->
         <div>
         <div class="row">
         <div>
@@ -53,7 +53,7 @@
     </header>
 
     
-    <section>
+    <section>   <!-- This function signifies the experiences in a list form -->
         <ul class="stuffido">
             <li> Entrepreneur</li>
             <li> Soccer Athlete </li>
@@ -67,7 +67,7 @@
         <p>Jaival Vikal</p>
     </footer>
 
-    <script>
+    <script> //Added functionality for the on click function in JAVA Script 
         function toggleMenu() {
             const menu = document.getElementById("menu");
             if (menu.style.display === "block") {
