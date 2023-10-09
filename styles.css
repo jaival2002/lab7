@@ -148,6 +148,6 @@ form input[type="submit"]:hover {
 
     #menu li {
         display: block;  /* This function helps stack the items vertically in the menu when the dimensions change */
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem; /* testing stuff */
     }
 }
